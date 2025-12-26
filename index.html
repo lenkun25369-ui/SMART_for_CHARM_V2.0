@@ -47,7 +47,7 @@
      **********************************************************/
     FHIR.oauth2.ready()
       .then(client => {
-        // ✅ 完全照你給的範例方式讀 patient id
+        // ✅ 讀 patient id
         accessToken = client.state.tokenResponse.access_token;
         fhirBase = client.state.serverUrl;
         pid = client.patient.id;
