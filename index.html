@@ -64,7 +64,7 @@
           `GET Observation?subject=Patient/${pid}&_id=${OBS_ID}\n\n` +
           "Response:\n";
 
-        // ⭐ 精確搜尋：_id = 683489（不直接 GET Observation/683489）
+        // ⭐ 精確搜尋
         return client.request(
           `Observation?subject=Patient/${pid}&_id=${OBS_ID}`
         );
